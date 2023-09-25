@@ -19,6 +19,6 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
-void swap_node2(listint_t **a, listint_t **b);
 void selection_sort(int *array, size_t size);
+void insert_min_node_head(listint_t **list);
 #endif
