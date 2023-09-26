@@ -63,16 +63,16 @@ void insertion_sort_list(listint_t **list)
  */
 void insert_min_node_head(listint_t **list)
 {
-        listint_t *node;
-        int *temp;
+	listint_t *node;
+	int *temp;
 
-        node = malloc(sizeof(listint_t));
-        if (!node)
-                return;
-        temp = (int *)&node->n;
-        *temp = INT_MIN;
-        (*list)->prev = node;
-        node->next = *list;
-        node->prev = NULL;
-        *list = node;
+	node = malloc(sizeof(listint_t));
+	if (!node)
+		return;
+	temp = (int *)&node->n;
+	*temp = INT_MIN;
+	(*list)->prev = node;
+	node->next = *list;
+	node->prev = NULL;
+	*list = node;
 }
